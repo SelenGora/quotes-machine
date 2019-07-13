@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FCC- Random Quote Machine</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+
+    <style>
+      body {
+        background: hsla(98, 66%, 78%, 1);
+        color: hsla(278, 63%, 23%, 1);
+        font-family: 'Montserrat Alternates', sans-serif;
+      }
+      #quote-box {
+        margin: 10% auto;
+        width: 520px;
+      }
+      article {
+        border: 1px solid hsla(278, 63%, 23%, .2);
+        border-radius: 16px;
+        font-size: 24px;
+        margin-bottom: 24px;
+        padding: 16px 16px 16px 32px;
+        position: relative;
+      }
+      article::before {
+        content: "\201C"; 
+        font-size: 26px;
+        opacity: 0.7;
+        left: 16px;
+        position: absolute;
+        top: 16px;
+      }
+      footer {
+          text-align: center;
+      }
+      #author {
+        text-align: right;
+      }
+      #tweet-quote {
+          background: url(https://img.icons8.com/color/48/000000/twitter.png) left top;
+          background-size: contain;
+          background-repeat: no-repeat;
+          padding-left: 36px;
+      }
+
+      footer a {
+        border: 1px solid hsla(278, 63%, 23%, .2);
+        border-radius: 8px;
+        margin-right: 8px;
+        padding: 8px;
+        text-decoration: none;
+        -webkit-user-select: none; /* Safari 3.1+ */
+        -moz-user-select: none; /* Firefox 2+ */
+        -ms-user-select: none; /* IE 10+ */
+        user-select: none; /* Standard syntax */
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="quote-box">
+      <article>
+        <div id="text"></div>
+        <div id="author"></div>
+      </article>
+      <footer>
+        <a target="_blank" id="tweet-quote">Tweet This</a>
+        <a href="#" id="new-quote">Or Read New One</a>
+      </footer>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
